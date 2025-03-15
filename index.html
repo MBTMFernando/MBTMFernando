@@ -52,11 +52,12 @@
     
     <h3>The officer is a genius.</h3>
 
-    <video controls autoplay loop width="360" height="240">
-        <source src="Videomp4.01.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-        
-    </video>
+ <video controls autoplay loop width="640" height="360" preload="metadata">
+    <source src="Videomp4.01.mp4" type="video/mp4">
+    <source src="Videomp4.01.webm" type="video/webm">
+    <p>Your browser does not support the video tag.</p>
+</video>
+    
     <br>
     <div>
         <button id="likeButton" style="background-color: blue;">👍 Like</button>
