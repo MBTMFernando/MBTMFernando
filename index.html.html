@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANIME WORLD</title>
+    <script src="script.js" defer></script>  <!--Untitled-1.js--->
+
+    <style>
+        body {
+            background-color: white;
+            color: black;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            color: blue;
+        }
+        p {
+            color: brown;
+        }
+        button {
+            background-color: rgb(80, 248, 37);
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: rgb(46, 248, 39);
+        }
+    
+        textarea {
+            width: 100%;
+            height: 100px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>ANIME WORLD</h1>
+    
+    <p>Anime World will provide you with inspiration and thought-provoking animated videos to enjoy and gain knowledge.</p>
+    
+    <h2>The officer is really a genius.</h2>
+
+    <video controls autoplay loop width="640" height="360">
+        <source src="Videomp4.01.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+        
+    </video>
+    <br>
+    <div>
+        <button id="likeButton" style="background-color: blue;">👍 Like</button>
+        <span id="likeCount">0</span> Likes
+
+        <button id="dislikeButton" style="background-color: royalblue;padding-left: auto;">👎 Dislike</button>
+        <span id="dislikecount">0</span> Dislikes
+        
+        <button id="subscribeButton" style="background-color: red; margin-right: 10px;">Subscribe</button>
+        <span id="subscribeMessage; subscribecount">0</span> Subscribers
+
+    </div>
+ 
+    <br>
+    <textarea placeholder="Please be kind enough to leave your feedback here"></textarea>
+    <br>
+    <button>Click me</button>
+    <script>
+        document.querySelector('button').addEventListener('click', function() {
+            alert('Thank you for your feedback!');
+        });
+    </script>
+
+</body>
+</html>
